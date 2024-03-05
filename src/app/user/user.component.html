@@ -1,0 +1,20 @@
+<section>
+    @if (isLoggedIn){
+        <img
+        (auxclick)="greet()"
+        src="https://picsum.photos/200">
+        <button (click)="isLoggedIn=false" class="logout-button">Cerrar sesión</button>
+
+    }
+    @else{
+        <button (click)="isLoggedIn=true" class="login-button">Login</button>
+
+    }
+    <app-games (addFavoriteEvent)="getFavGame($event)"
+        username="">
+    </app-games>
+    @if (favGame!= ''){
+        <p>Tu color favorito es {{favGame}}</p>
+    }
+    <app-recargar></app-recargar>
+</section>

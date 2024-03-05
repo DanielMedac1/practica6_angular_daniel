@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    color-scheme: light dark;
+}
+
+body{
+    
+}
+
+h1 {
+  font-size: 24px; 
+  color: #333; 
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  border-radius: 5px; 
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
